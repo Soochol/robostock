@@ -1,0 +1,62 @@
+{
+  "block1": {
+    "max_volume_enabled": true,
+    "max_volume_period_days": 730,
+    "max_volume_comparison": ">=",
+    "trading_value_enabled": true,
+    "min_trading_value": 100000000000,
+    "trading_value_unit": "원",
+    "trading_value_calculation": "close_volume",
+    "price_high_enabled": true,
+    "price_high_period_months": 4,
+    "price_range_enabled": false,
+    "price_min": 12121,
+    "price_max": 2222,
+    "price_unlimited_max": false,
+    "market_cap_enabled": false,
+    "market_cap_min": 10000000000,
+    "new_high_enabled": false,
+    "new_high_min_grade": "F",
+    "new_high_included_grades": [],
+    "max_volume_period": 20,
+    "max_volume_ratio": 150,
+    "min_market_cap": 1000000000
+  },
+  "block2": {
+    "volume_ratio_enabled": true,
+    "volume_ratio_min": 0.76,
+    "volume_ratio_calculation": "simple",
+    "volume_ratio_comparison": "block1",
+    "period_enabled": true,
+    "min_days_from_block1": 1,
+    "max_days_from_block1": 180,
+    "use_business_days": false,
+    "pattern_enabled": true,
+    "pattern_types": {
+      "D": true,
+      "D_D1": true,
+      "D_D2": true,
+      "D_D1_D2": true
+    },
+    "pattern_threshold_pct": 100,
+    "pattern_avg_period": 20,
+    "trading_value_enabled": false,
+    "min_trading_value": 30000000000,
+    "trading_value_min_days": 1,
+    "price_breakthrough_enabled": true,
+    "price_breakthrough_pct": 29,
+    "gap_min": 1,
+    "gap_max": 10,
+    "volume_ratio": 80,
+    "pattern_d1_threshold_pct": 80,
+    "pattern_d2_threshold_pct": 80
+  },
+  "period": {
+    "start_year": 2015,
+    "start_month": 1,
+    "start_day": 1,
+    "end_year": 2025,
+    "end_month": 10,
+    "end_day": 8
+  }
+}
